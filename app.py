@@ -2,14 +2,14 @@ import json
 import pandas as pd
 from tqdm import tqdm
 
-from scraper import scrape_website_text
+from scraper import scrape_multiple_pages
 from prompts import SYSTEM_PROMPT, build_analysis_prompt, build_email_prompt
 from llm import call_llm_json
 from utils import safe_join_lines
 
 
 def process_company(company: str, website: str) -> dict:
-    website_text = scrape_website_text(website)
+    website_text = scrape_multiple_pages(website)
 
     if website_text.startswith("SCRAPE_ERROR:"):
         return {
