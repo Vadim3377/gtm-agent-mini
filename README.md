@@ -109,3 +109,5 @@ AI was used to accelerate prompt design and UI prototyping.
 The system architecture, pipeline structure, and integration between components were implemented manually.
 
 ---
+## Video demontration:
+https://www.youtube.com/watch?v=SlXKG3t4a1k
